@@ -1,4 +1,4 @@
-# Travaux Pratiques : Connexion à une API REST avec Volley en Java
+# TP : Connexion à une API REST avec Volley en Java
 ## Objectifs du TP
 
 Ce TP vise à vous apprendre à utiliser la bibliothèque Volley pour faciliter la communication entre
