@@ -2,6 +2,7 @@ package fr.itds.api_and_voley;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -20,7 +21,7 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -76,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                         JSONObject jsonObject = new JSONObject(response);
                         int status = jsonObject.getInt("status");
 
+                        Log.d("JSON Output : ", jsonObject.toString(4));
                         if (status == 200) { // Success
                             Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                             // Proceed to next activity or dashboard
